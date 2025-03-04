@@ -3,7 +3,7 @@ interface myType {
   p: string;
 };
 
-export default function ContainerHeader(props : myType) {
+export default function ContentHeader(props : myType) {
   return (
     <header>
       <p>{props.p}</p>

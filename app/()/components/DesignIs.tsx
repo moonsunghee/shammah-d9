@@ -1,11 +1,11 @@
-import ContainerHeader from "@/components/ContainerHeader";
+import ContentHeader from "@/app/components/ContentHeader";
 
 export default function DesignIs() {
   const title = "What is Design?";
   const headcopy = "디자인이란 계획하고 설계하는 행위 입니다."
   return (
     <div className="content designIs">
-      <ContainerHeader h3={title} p={headcopy}/>
+      <ContentHeader h3={title} p={headcopy}/>
       <section>
         <div className="imgBox"></div>
         <div className="txtBox">
