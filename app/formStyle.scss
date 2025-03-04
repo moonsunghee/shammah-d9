@@ -1,0 +1,45 @@
+input,
+button {
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+  &[type=submit],
+  &[type=reset],
+  &[type=button] {
+    background-color: #15d;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+}
+
+button {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  &.normal {
+    background-color: #999;
+  }
+
+  &.active {
+    background-color: #09f;
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+label {
+  line-height: 30px;
+}

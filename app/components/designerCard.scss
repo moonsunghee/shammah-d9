@@ -1,0 +1,71 @@
+.designer-card {
+  &-wrap {
+    background-color: #cccccc;
+    min-width: auto;
+    min-width: calc(50% - 20px);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+
+
+    .designer {
+      &-image {
+        background-color: #fff;
+        height: 260px;
+        border-radius: 8px;
+      }
+
+      &-position {
+        display: flex;
+
+        li {
+          color: #fff;
+          background-color: #999;
+          border-radius: 100px;
+          padding: 0 20px;
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+
+      &-name {
+        font-size: 24px;
+        line-height: 40px;
+      }
+
+      &-button {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+          background-color: #666;
+        }
+      }
+
+      &-schedule {
+        li {
+          text-indent: 60px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+
+  &__left {
+    width: 300px;
+    min-width: 50%;
+    padding: 20px;
+  }
+
+  &__right {
+    width: 320px;
+    min-width: 50%;
+    padding: 20px;
+    padding-left: 0;
+
+    .designer__header {
+      border-left: 1px solid #000;
+      padding-left: 20px;
+    }
+  }
+}

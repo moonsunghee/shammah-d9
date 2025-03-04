@@ -1,0 +1,195 @@
+@import './_mixin';
+@import './reset';
+@import './formStyle';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap');
+
+body {
+  background-color: var(--bg-color);
+  font-size: 16px;
+  line-height: 20px;
+  overflow-x: hidden;
+  font-family: 'Noto Sans Kr', sans-serif;
+  position: relative;
+  z-index: -10;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+
+    font-weight: 700;
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  p {
+    font-family: 'Noto Serif KR', serif;
+
+  }
+}
+
+.global-header {
+  width: 100vw;
+  background-color: #000;
+  color: #FFF;
+  padding: 20px 0;
+
+  header {
+    @include layout-center;
+    @include flex-between;
+
+    .gnb {
+      @include flex-around;
+
+      .logo {
+        line-height: 40px;
+        color: #fff;
+      }
+
+      .navi {
+        @include flex-around;
+        margin-left: 20px;
+
+        li {
+          line-height: 40px;
+          padding: 0 10px;
+        }
+      }
+    }
+
+    .util {
+      .navi {
+        @include flex-around;
+
+        li:last-of-type {
+          margin-left: 14px;
+        }
+
+        .login {
+          font-size: 14px;
+        }
+
+        .signup {
+          button {
+            background-color: #09f;
+            border: 0;
+            line-height: 40px;
+          }
+
+        }
+      }
+
+      img {
+        border-radius: 100px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+      }
+
+      .circleUser {
+        font-size: 36px;
+      }
+
+    }
+  }
+}
+
+
+.content {
+  width: 100%;
+  padding: 120px 0;
+
+  header {
+    @include layout-center;
+    border-left: 1px solid #000;
+    padding-left: 20px;
+
+    h3 {
+      font-size: 36px;
+      line-height: 60px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  section {
+    @include layout-center;
+    margin-top: 40px;
+  }
+}
+
+.global-footer {
+
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+
+  footer {
+    @include layout-center;
+
+    ul {
+      @include flex-center;
+
+      li {
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
+        @include flex-center;
+        color: #fff;
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        @include flex-center;
+        flex-direction: column;
+        font-size: 36px;
+
+        span {
+          font-size: 12px;
+        }
+
+
+      }
+    }
+
+
+  }
+}
+
+.pagination {
+  @include flex-center;
+  margin-top: 12px;
+
+  button {
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    color: #000;
+  }
+
+  ul {
+    @include flex-center;
+
+    li {
+
+      width: 32px;
+      height: 32px;
+
+      &>* {
+        @include flex-center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

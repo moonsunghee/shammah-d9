@@ -1,0 +1,43 @@
+@import '../../_mixin';
+
+.mnWrap {
+  main {
+    @include layout-center;
+    position: relative;
+
+    .area {
+      &-left {
+        direction: rtl;
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        z-index: -9;
+
+        &::before {
+          display: block;
+          content: "";
+          width: calc((100vw - 100%) / 2 + 100%);
+          height: 100%;
+          background-color: #000;
+        }
+      }
+
+      &-right {
+        position: relative;
+
+        .imgBox {
+          width: calc((100vw - 100%) / 2 + 100%);
+          height: 440px;
+          background-color: #fc0;
+        }
+
+        .txtBox {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+        }
+      }
+    }
+  }
+}
