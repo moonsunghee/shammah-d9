@@ -1,4 +1,4 @@
-import ContentHeader from "@/app/components/ContentHeader";
+import ContentHeader from "@/src/components/ContentHeader";
 
 export default function Designers() {
   const title="삼마디자이너 리스트";

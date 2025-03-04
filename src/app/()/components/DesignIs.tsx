@@ -1,4 +1,4 @@
-import ContentHeader from "@/app/components/ContentHeader";
+import ContentHeader from "@/src/components/ContentHeader";
 
 export default function DesignIs() {
   const title = "What is Design?";
