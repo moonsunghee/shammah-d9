@@ -14,7 +14,7 @@ export default function GlobalHeader() {
             <ul className="navi">
               <li><Link href={"/designerList"}>디자이너 찾기</Link></li>
               <li><Link href={"/companyHiredDesigner"}>고용중인 디자이너</Link></li>
-              <li><Link href={"/progressSituation"}>프로젝트 현황</Link></li>
+              <li><Link href={"/projectsSituation"}>프로젝트 현황</Link></li>
             </ul>
           }
         </nav>
