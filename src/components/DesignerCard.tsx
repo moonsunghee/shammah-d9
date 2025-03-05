@@ -1,22 +1,26 @@
 import "./designerCard.scss";
-export default function DesignerCard() {
-  const isHired = true;
+
+interface myType {
+  isHired: boolean;
+};
+
+export default function DesignerCard(props : myType) {
   return (
-    <article className="designer-card-wrap">
+    <article className="designer-card">
       <div className="designer-card__left">
         <div className="designer-image"></div>
         <ul className="designer-position">
           <li>고급 FE 개발자</li>
         </ul>
-        <h4 className="designer-name">홍길동</h4>
+        <h4 className="designer-name">{'홍길동'}</h4>
         <div className="designer-button">
           <button>근로상태</button>
         </div>
       </div>
-      {isHired &&
+      {props.isHired &&
       <div className="designer-card__right">
         <div className="designer__header">
-          <div className="designer-duedate">2024-11-08 ~ 2025-05-23</div>
+          <div className="designer-duedate">{'2024-11-08 ~ 2025-05-23'}</div>
           <div className="designer-restday">{0} / {43} day</div>
         </div>
         <ul className="designer-schedule">

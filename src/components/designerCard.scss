@@ -1,55 +1,53 @@
 .designer-card {
-  &-wrap {
-    background-color: #cccccc;
-    min-width: auto;
-    min-width: calc(50% - 20px);
-    display: flex;
-    justify-content: space-between;
-    border-radius: 16px;
+
+  background-color: #cccccc;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
 
 
-    .designer {
-      &-image {
-        background-color: #fff;
-        height: 260px;
-        border-radius: 8px;
+  .designer {
+    &-image {
+      background-color: #fff;
+      height: 260px;
+      border-radius: 8px;
+    }
+
+    &-position {
+      display: flex;
+
+      li {
+        color: #fff;
+        background-color: #999;
+        border-radius: 100px;
+        padding: 0 20px;
+        font-size: 11px;
+        line-height: 16px;
       }
+    }
 
-      &-position {
-        display: flex;
+    &-name {
+      font-size: 24px;
+      line-height: 40px;
+    }
 
-        li {
-          color: #fff;
-          background-color: #999;
-          border-radius: 100px;
-          padding: 0 20px;
-          font-size: 11px;
-          line-height: 16px;
-        }
+    &-button {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        background-color: #666;
       }
+    }
 
-      &-name {
-        font-size: 24px;
+    &-schedule {
+      li {
+        text-indent: 60px;
         line-height: 40px;
-      }
-
-      &-button {
-        display: flex;
-        justify-content: flex-end;
-
-        button {
-          background-color: #666;
-        }
-      }
-
-      &-schedule {
-        li {
-          text-indent: 60px;
-          line-height: 40px;
-        }
       }
     }
   }
+
 
   &__left {
     width: 300px;

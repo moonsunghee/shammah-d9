@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FaCircleUser, FaComment } from "react-icons/fa6";
 
 export default function GlobalHeader() {
-  const loggined = true;
-  const userPhoto = false;
+  const loggined: boolean = true;
+  const userPhoto: boolean = false;
   return (
     <div className="global-header">
       <header>
